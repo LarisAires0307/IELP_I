@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+    /*header{
+        background-color: #ca5a10;
+        text-align: center;
+    }*/
+    .titulo{
+        width: 50%;
+        text-align: center;
+    }
+    h1{
+        font-family:ExtraBold 800 ;
+        font-size: 300%;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, rgb(102, 30, 2), rgb(240, 167, 10), rgb(156, 44, 0));
+        background-size: 400% 100%;
+        animation: degrade 10s linear infinite alternate;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    .h1-2{
+        font-family:ExtraBold 800 ;
+        font-size: 500%;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, rgb(102, 30, 2), rgb(240, 167, 10), rgb(156, 44, 0));
+        background-size: 400% 100%;
+        animation: degrade 10s linear infinite alternate;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    figure {
+        margin: 30px;
+        text-align: justify;
+    }
+
+    p::first-letter {
+        font-size: 7rem;
+        font-weight: bold;
+        float: left;
+        margin: 2px 5px;
+    }
+
+
+    @keyframes degrade {
+        0%{
+            background-position-x: 0%;
+        }
+        100%{
+            background-position: 200%;
+        }
+    }
+
+    body{
+        background-image: url('pergaminho.png');
+        background-repeat: no-repeat;
+        background-attachment:scroll; 
+        background-size: 200% 1200%;
+        background-color: rgb(0, 0, 0);
+        background-position: center;
+     
+        table-layout: fixed;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    td{
+        margin: 5px 5px 5px 500px;
+    }
+
+    h3{
+        color: #000000;
+        font-family: cinzel;
+        /*font-size: 70%;*/
+    }
+
+    h2{
+        color: #000000;
+        font-family: cinzel;
+        font-size: 200%;
+    }
+
+    p{
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 130%;
+        text-align: justify;
+        width: 95%;
+        height: 75%;
+        line-height: 2;
+        
+    }
+
+    .p1{
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 130%;
+        text-align: justify;
+        width: 95%;
+        height: 75%;
+        
+    }
+
+
+    .quiz-container {
+        background-color: rgb(204, 80, 8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        text-align: center;
+        font-family: cinzel;
+    }
+    .quiz-header {
+        margin-bottom: 20px;
+    }
+    .question {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .answers {
+        list-style-type: none;
+        padding: 0;
+    }
+    .answers li {
+        margin: 10px 0;
+    }
+    .answers button {
+        background-color: #e4b96a;
+        color: #000000;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1em;
+        width: 100%;
+    }
+    .answers button.correct {
+        background-color: #28a745;
+    }
+    .answers button.incorrect {
+        background-color: #dc3545;
+    }
+    .results {
+        display: none;
+        font-size: 1.2em;
+    }

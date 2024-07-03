@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background-image: url('pergaminho.png');
+    background-repeat: no-repeat;
+    background-attachment:scroll; 
+    background-size: 170% 150%;
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+}
+h1{
+    font-family:ExtraBold 800 ;
+    font-size: 300%;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, rgb(102, 30, 2), rgb(240, 167, 10), rgb(156, 44, 0));
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main {
+    background-color: rgb(180, 83, 4);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 70%;
+    min-height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.spnQtd {
+    text-align: end;
+}
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+button {
+    width: 100%;
+    text-align: start;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: beige;
+    color: black;
+}
+.finish {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+.finish button {
+    text-align: center;
+}
